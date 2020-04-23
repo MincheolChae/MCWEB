@@ -21,66 +21,8 @@
 
 
     <title> [ WEB ] </title>
-    <meta charset="utf-8">
-    <style>
-        body{
-            margin:25px;
-        }
-        a {
-            color:black;
-            text-decoration: none;
-        }
-        h1{
-            font-size : 80px;
-            text-align : center;
-            border-bottom: 3px black solid;
-            margin:0;
-            padding:20px;
-            /* width: 500px; */
-        }
-
-        #grid ol{
-            font-size: 22px;
-            border-right: 1px black solid;
-            width: 130px;
-            margin: 20px;
-            margin-top:10px;
-            padding: 20px;
-            padding-right:30px;
-            padding-left:35px;
-        }
-        
-        #grid #article{
-            padding-left: 30px;
-        }
-        #grid{
-            display:grid;
-            grid-template-columns: 250px 1fr;
-        }
-        div{
-            padding-top:10px;
-            padding-bottom:30px;
-        }
-
-        @media(max-width:600px){
-            #grid{
-            display:block;
-            }
-            #grid ol{
-                font-size:20px;
-                border-right:none;
-                padding-bottom:0;
-                padding-top:0;
-                margin-bottom:0;
-                margin-top:0;
-            }
-            h1{
-                font-size:40px;
-                text-align:initial;
-                border-bottom: none;
-            }
-        }
-    </style>
+     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -91,18 +33,34 @@
 
     <h1><a href="index.html">WEB</a></h1>
 
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('a').style.color = 'white';
+        document.querySelector('#mode').style.color = 'white';
+    ">
+
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('a').style.color = 'black';
+        document.querySelector('#mode').style.color = 'white';
+    ">
+
     <div id="grid">
         <ol>
-            <li><a href="1.html">HTML</a></li>
+            <li><a id="mode" href="1.html">HTML</a></li>
             <li><a href="2.html">CSS</a></li>
             <li><a href="3.html">JavaScript</a></li>
         </ol>
         <div id="article">
             <h2><u>WEB이란?</u></h2>
-            <img src="imgindex.jpg" alt="build www" width="50%">
+            <img src="imgindex.jpg" alt="build www" width="70%">
             <p>    
-                <a href="https://terms.naver.com/entry.nhn?docId=365927&cid=50375&categoryId=50375"><strong><em>WWW</em></strong></a> is World Wide WEB.<br>
-                <strong><em>WWW</em></strong>는 월드 와이드 웹!<br>
+                <a id="mode" href="https://terms.naver.com/entry.nhn?docId=365927&cid=50375&categoryId=50375"><strong><em><u>WWW</u></em></strong></a> is World Wide WEB.<br>
+                <strong><em>WWW</em></strong>는 월드 와이드 웹!
+            </p>
+            <p>
                 The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators 
                 (URLs, such as <a href="https://www.example.com/">https://www.example.com/</a>), which may be interlinked by hypertext, and are accessible over the Internet. The resources of the WWW are transferred via the Hypertext Transfer Protocol (HTTP) 
                 and may be accessed by users by a software application called a web browser and are published by a software application called a web server.
@@ -114,6 +72,22 @@
         </div>
     </div>
     
+
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5e9fc5ad69e9320caac60eba/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
     <br>LiveRe 댓글창↓↓
     <!-- 라이브리 시티 설치 코드 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC80OTc5NS8yNjI4Ng==">
