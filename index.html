@@ -1,15 +1,16 @@
 <!doctype html>
 <html>
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164216819-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164216819-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-164216819-1');
-</script>
+        gtag('config', 'UA-164216819-1');
+    </script>
 
     <!-- Google Tag Manager 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -21,8 +22,9 @@
 
 
     <title> [ WEB ] </title>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="colors.js"></script>
 </head>
 
 <body>
@@ -33,80 +35,77 @@
 
     <h1><a href="index.html">WEB</a></h1>
 
-    <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-        document.querySelector('a').style.color = 'white';
-        document.querySelector('#mode').style.color = 'white';
-    ">
-
-    <input type="button" value="day" onclick="
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        document.querySelector('a').style.color = 'black';
-        document.querySelector('#mode').style.color = 'black';
-    ">
-
+        <input type="button" value="night" onclick="ndHandler(this)">
+    
+        
     <div id="grid">
         <ol>
-            <li><a id="mode" href="1.html">HTML</a></li>
+            <li><a href="1.html">HTML</a></li>
             <li><a href="2.html">CSS</a></li>
             <li><a href="3.html">JavaScript</a></li>
         </ol>
         <div id="article">
             <h2><u>WEB이란?</u></h2>
             <img src="imgindex.jpg" alt="build www" width="70%">
-            <p>    
-                <a id="mode" href="https://terms.naver.com/entry.nhn?docId=365927&cid=50375&categoryId=50375"><strong><em><u>WWW</u></em></strong></a> is World Wide WEB.<br>
+            <p>
+                <a href="https://terms.naver.com/entry.nhn?docId=365927&cid=50375&categoryId=50375"><strong><em><u>WWW</u></em></strong></a>
+                is World Wide WEB.<br>
                 <strong><em>WWW</em></strong>는 월드 와이드 웹!
             </p>
             <p>
-                The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators 
-                (URLs, such as <a href="https://www.example.com/">https://www.example.com/</a>), which may be interlinked by hypertext, and are accessible over the Internet. The resources of the WWW are transferred via the Hypertext Transfer Protocol (HTTP) 
-                and may be accessed by users by a software application called a web browser and are published by a software application called a web server.
+                The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other
+                web resources are identified by Uniform Resource Locators
+                (URLs, such as <a href="https://www.example.com/">https://www.example.com/</a>), which may be
+                interlinked by hypertext, and are accessible over the Internet. The resources of the WWW are transferred
+                via the Hypertext Transfer Protocol (HTTP)
+                and may be accessed by users by a software application called a web browser and are published by a
+                software application called a web server.
             </p>
             <p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
                 <br>이건 엄청난 일이다! 단지 익숙할 뿐
             </p>
         </div>
     </div>
-    
 
-        <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5e9fc5ad69e9320caac60eba/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5e9fc5ad69e9320caac60eba/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
 
 
     <br>LiveRe 댓글창↓↓
     <!-- 라이브리 시티 설치 코드 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC80OTc5NS8yNjI4Ng==">
-<script type="text/javascript">
-(function(d, s) {
-   var j, e = d.getElementsByTagName(s)[0];
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80OTc5NS8yNjI4Ng==">
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
 
-   if (typeof LivereTower === 'function') { return; }
+                if (typeof LivereTower === 'function') { return; }
 
-   j = d.createElement(s);
-   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-   j.async = true;
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
 
-   e.parentNode.insertBefore(j, e);
-})(document, 'script');
-</script>
-<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
-</div>
-<!-- 시티 설치 코드 끝 -->
-    
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+    </div>
+    <!-- 시티 설치 코드 끝 -->
+
 </body>
+
 </html>
